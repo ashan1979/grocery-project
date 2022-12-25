@@ -244,3 +244,35 @@ Grocery List
   flex: 1 0 auto;
   color: var(--clr-grey-5);
 }
+
+#grocery::placeholder {
+  font-family: var(--ff-secondary);
+  color: var(--clr-grey-5);
+}
+
+.submit-btn {
+  background: var(--clr-primary-8);
+  border-color: transparent;
+  flex: 0 0 5rem;
+  display: grid;
+  align-items: center;
+  padding: 0.25rem;
+  text-transform: capitalize;
+  letter-spacing: 2px;
+  border-top-right-radius: var(--radius);
+  border-bottom-right-radius: var(--radius);
+  cursor: pointer;
+  content: var(--clr-primary-5);
+  transition: var(--transition);
+  font-size: 0.85rem;
+}
+
+.submit-btn:hover {
+  background: var(--clr-primary-5);
+  color: var(--clr-white);
+}
+
+.grocery-container {
+  visibility: visible;
+}
+
