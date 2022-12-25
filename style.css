@@ -276,3 +276,18 @@ Grocery List
   visibility: visible;
 }
 
+.grocery-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+  transition: var(--transition);
+  padding: 0.25rem 1rem;
+  border-radius: var(--radius);
+  text-transform: capitalize;
+}
+
+.gorcery-item:hover {
+  color: var(--clr-grey-5);
+  background: var(--clr-grey-10);
+}
