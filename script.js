@@ -24,3 +24,31 @@ window.addEventListener("DOMContentLoaded", setupItems);
 
 // ******* functions ********
 
+// add item
+function addItem(e) {
+    e.preventDefault();
+    const value = grocery.value;
+    const id = new Date().getTime().toString();
+
+    if (value !=="" && !editFlag) {
+        const element = document.createElement("article");
+        let attr = document.createAttribute("data-id");
+        attr.value = id;
+        element.setAttributeNode(attr);
+        element.classList.add("grocery-item");
+        element.innerHTML = `<p class="title">${value}</p>
+            <div class="btn-container">
+            <!-- edit btn -->
+                <button type="button" class="edit-btn">
+                    <i class="fas fa-edit"></i>
+                </button>
+                <! -- delete button -->
+                <button type="button" class="delete-btn">
+                    <i class="fas fa-trash"></i>
+                </button>
+            </div>
+            `;
+    // add event lsteners to both buttons
+
+    }
+}
