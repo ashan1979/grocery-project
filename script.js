@@ -69,5 +69,11 @@ function addItem(e) {
         displayAlert("Value Changed", "Success")
 
         // edit local storage
+        editLocalStorage(editID, value)
+        setBackToDefault();
+    } else {
+        displayAlert("Please Enter a Value", "Danger");
     }
 }
+
+
