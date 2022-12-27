@@ -55,6 +55,19 @@ function addItem(e) {
         editBtn.addEventListener("click", editItem)
 
         //append child
+        list.appendChild(element);
+        //display alert
+        displayAlert("item added to the list", "success");
+        //show container
+        container.classList.add("show-container");
+        //set local storage
+        addToLocalStorage(id, value);
+        //set back to default
+        setBackToDefault();
+    } else if (value !=="" && editFlag) {
+        editElement.innerHTML = value;
+        displayAlert("Value Changed", "Success")
 
+        // edit local storage
     }
 }
