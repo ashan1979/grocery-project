@@ -49,6 +49,12 @@ function addItem(e) {
             </div>
             `;
     // add event lsteners to both buttons
+        const deleteBtn = element.querySelector(".delete-btn");
+        deleteBtn.addEventListener("click", dleteItem);
+        const editBtn = element.querySelector(".edit-btn");
+        editBtn.addEventListener("click", editItem)
+
+        //append child
 
     }
 }
