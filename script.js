@@ -221,5 +221,6 @@ function createListItem(id, value) {
     const editBtn = element.querySelector(".edit-btn");
     editBtn.addEventListener("click", editItem);
 
-
+// append child
+list.appendChild(element);
 }
