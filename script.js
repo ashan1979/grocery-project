@@ -133,3 +133,23 @@ function editItem(e) {
     submitBtn.textContent = "edit";
 }
 
+// set back to defaults
+
+function setBackToDefault() {
+    grocery.value = "";
+    editFlag = false;
+    editID = "";
+    submitBtn.textContent = "submit";
+}
+
+// ********** Local Storage **********
+
+// add to local storage
+
+function addToLocalStorage(id, value) {
+    const grocery = {id, value};
+    let items = getLocalStorage();
+    items.push(grocery);
+    localStorage.setItem("list", JSON.stringify(items));
+}
+
